@@ -5,12 +5,13 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Default']         = { 1, httpService:JSONDecode('{"FontColor":"08769c","MainColor":"0F0F0F","AccentColor":"08769c","BackgroundColor":"101010","OutlineColor":"0B0B0B"}') },
-		['Green'] 			= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"141414","AccentColor":"00ff8b","BackgroundColor":"1c1c1c","OutlineColor":"3c3c3c"}') },
-		['Jester'] 			= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"db4467","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
-		['Mint'] 			= { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"242424","AccentColor":"3db488","BackgroundColor":"1c1c1c","OutlineColor":"373737"}') },
-		['Tokyo Night'] 	= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
-		['Ubuntu'] 			= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
+		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"BFBFBF","MainColor":"0F0F0F","AccentColor":"d17bff","BackgroundColor":"101010","OutlineColor":"0B0B0B"}') },
+		['Venom'] 		= { 2, httpService:JSONDecode('{"FontColor":"BFBFBF","MainColor":"1c1c1c","AccentColor":"ff0000","BackgroundColor":"101010","OutlineColor":"0B0B0B"}') },
+		['Bitch Bot'] 		= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1e1e","AccentColor":"7e48a3","BackgroundColor":"232323","OutlineColor":"141414"}') },
+		['Burn Hub'] 		= { 4, httpService:JSONDecode('{"FontColor":"ff8200","MainColor":"30333b","AccentColor":"ff8200","BackgroundColor":"1a1c20","OutlineColor":"141414"}') },
+		['Fatality'] 		= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1842","AccentColor":"c50754","BackgroundColor":"191335","OutlineColor":"3c355d"}') },
+		['GameSense'] 		= { 6, httpService:JSONDecode('{"FontColor":"919191","MainColor":"101010","AccentColor":"9CB819","BackgroundColor":"111111","OutlineColor":"2D2D2D"}') },
+		['Blackout'] 	= { 7, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"121212","AccentColor":"ffffff","BackgroundColor":"101010","OutlineColor":"0f0f0f"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
